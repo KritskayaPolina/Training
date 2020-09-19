@@ -1,0 +1,7 @@
+gpackage com.company;
+public class Main {
+    public static void main(String[] args){
+    	double n=3.425;
+		System.out.println((int)n);
+	}
+}
