@@ -1,0 +1,11 @@
+public class Main {
+public static void main(String[] args) {
+int q=21;
+int w=8;
+int x;
+int x2;
+	x=q/w;
+	x2=q%w;
+System.out.println(x);
+System.out.println(x2);
+}
