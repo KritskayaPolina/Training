@@ -1,0 +1,14 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+    	int a=24;
+    	int b;
+    	int c;
+    	int x;
+    	b=a%10;
+    	c=a/10;
+    	System.out.println(x=b+c);
+	}
+}
