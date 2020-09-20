@@ -1,0 +1,17 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args){
+	int n;
+		Scanner sr= new Scanner(System.in);
+		System.out.print("Введите число");
+		if (sr.hasNextInt()){
+			n = sr.nextInt();
+			if ((n%2)==0) {
+				System.out.print("Четное число" + n);
+			}else {System.out.print("Не четное число"+ n);}
+		}else System.out.print("Ввели не целое число");}
+}
