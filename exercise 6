@@ -1,0 +1,18 @@
+package com.company;
+
+public class Main {
+	public static void main(String[] args) {
+		double m =8.5;
+		double n = 11.45;
+		double x = 10;
+		double a = Math.abs(m - x);
+		double b = Math.abs(n - x);
+		if (a < b) {
+			System.out.println(m + " ближайшее");
+		} else if (a > b) {
+			System.out.println(n + " ближайшее");
+		} else {
+			System.out.println("Расстояние от " + m + " do 10 = расстояние от" + n + " до 10");
+		}
+	}
+}
