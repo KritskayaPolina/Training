@@ -1,0 +1,15 @@
+public class Main {
+	public static void main(String[] args) {
+		int a = 5;
+		int b = 155;
+
+		double c=Math.random()*(b-a)+a;
+		if (c>=25 && c<=100){
+			System.out.println("Число"+ c +"содержится в интервале 25;100");
+		}else{
+			System.out.println("Число"+ c +"не содержится в интервале 25;100");
+		}
+
+
+	}
+}
