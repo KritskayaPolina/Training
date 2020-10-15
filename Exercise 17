@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args){
+		int n;
+		int b=1;
+		Scanner scn=new Scanner(System.in);
+		System.out.println("Введите натуральное число");
+		if (scn.hasNextInt()){
+			n=scn.nextInt();
+			for(int i=n;i>0;i--){
+				b*=i;
+			}
+			System.out.println("Факториал числа "+n+" равен "+n);
+		}
+		else System.out.println("Ошибка. Введено не число");
+
+	}
+}
