@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args){
+		int n;
+		Scanner scn=new Scanner(System.in);
+		System.out.println("Введите натуральное число");
+		if (scn.hasNextInt()){
+			n=scn.nextInt();
+			for(int i=(int)Math.sqrt(n);i>=1;i--){
+				if(n%i==0&i!=1){
+					System.out.println("Заданное число - составное");
+					break;
+				}
+				if(i==1) System.out.println("Заданное число простое");
+			}
+		}
+		 else
+		 	System.out.println("Ошибка. Введено не число");
+
+	}
+}
