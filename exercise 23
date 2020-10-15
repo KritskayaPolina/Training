@@ -1,0 +1,17 @@
+public class Main {
+	public static void main (String[] args){
+		int a=0;
+		for(int b=1001;b<1000000;b++){
+			int b1=b/100000%10,
+					b2=b/10000%10,
+					b3=b/1000%10,
+					b4=b/100%10,
+					b5=b/10%10,
+					b6=b%10;
+			if((b1+b2+b3)==(b4+b5+b6)){
+				a++;
+			}
+		}
+		System.out.println(a);
+	}
+}
