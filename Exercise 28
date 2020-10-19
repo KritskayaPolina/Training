@@ -1,0 +1,18 @@
+public class DayOfWeek {
+    public static void main(String[] args) {
+        java.time.DayOfWeek currentDay = java.time.DayOfWeek.MONDAY;
+        System.out.println("Сегодня " + currentDay + " , до конца рабочей недели осталось: " + getWorkingHours(currentDay) + " рабочих часов");
+    }
+
+    public static int getWorkingHours(java.time.DayOfWeek currentDay) {
+        return switch (currentDay) {
+            case MONDAY->30;
+            case TUESDAY -> 22;
+            case WEDNESDAY -> 17;
+            case THURSDAY -> 11;
+            case FRIDAY -> 4;
+            case SATURDAY->1;
+            case SUNDAY -> 0;
+        };
+    }
+}
